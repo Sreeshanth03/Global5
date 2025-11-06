@@ -51,7 +51,7 @@ const Schedule = () => {
       <div
         className="medischedule-hero"
         style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL + "/Images/schedule.png"})`,
+          backgroundImage: `url("/Images/schedule.png")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
