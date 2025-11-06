@@ -1,0 +1,199 @@
+.mediclave-orators-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.mediclave-orators-heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Decorative line under heading */
+.mediclave-orators-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: rgb(44, 175, 173);
+  margin: 12px auto 0 auto;
+  border-radius: 5px;
+}
+
+/* Subtitle section */
+.mediclave-orators-subtitle {
+  color: grey;
+  margin-bottom: 70px;
+  font-size: 16px;
+}
+
+/* Orators Grid */
+.mediclave-orators-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+}
+
+.mediclave-orators-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.mediclave-orator-card {
+  flex: 0 0 auto;
+  width: 230px;
+  background: #fff;
+  text-align: center;
+}
+
+/* Image styling */
+.mediclave-orator-img-box {
+  border: 2px solid rgb(44, 175, 173);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.mediclave-orator-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.mediclave-orator-name {
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.mediclave-orator-title {
+  color: rgb(44, 175, 173);
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.mediclave-orator-country {
+  color: #333;
+  font-size: 15px;
+}
+
+/* View All Button */
+.mediclave-view-all-btn {
+  background-color: rgb(44, 175, 173) !important;
+  border: 1px solid rgb(44, 175, 173) !important;
+  width: 200px;
+  border-radius: 50px !important;
+  padding: 10px 30px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.mediclave-view-all-btn:hover {
+  background-color: rgb(34, 145, 143);
+}
+
+/* 🌐 Responsive Design */
+
+/* Laptops (1024px and below) */
+@media (max-width: 1024px) {
+  .mediclave-orators-heading {
+    font-size: 26px;
+  }
+
+  .mediclave-orators-subtitle {
+    margin-bottom: 60px;
+  }
+
+  .mediclave-orators-grid {
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+    white-space: normal;
+  }
+
+  .mediclave-orator-card {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+
+  .mediclave-orator-img {
+    height: 220px;
+  }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .mediclave-orators-heading {
+    font-size: 24px;
+  }
+
+  .mediclave-orators-subtitle {
+    font-size: 15px;
+    margin-bottom: 55px;
+  }
+
+  .mediclave-orators-grid {
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+    white-space: normal;
+  }
+
+  .mediclave-orator-card {
+    width: 80%;
+    margin-bottom: 25px;
+  }
+
+  .mediclave-orator-img {
+    height: 200px;
+  }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+  .mediclave-orators-container {
+    padding: 40px 10px;
+  }
+
+  .mediclave-orators-heading {
+    font-size: 22px;
+  }
+
+  .mediclave-orators-subtitle {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+
+  .mediclave-orators-grid {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: visible;
+    white-space: normal;
+  }
+
+  .mediclave-orator-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .mediclave-orator-img {
+    height: 180px;
+  }
+
+  .mediclave-view-all-btn {
+    padding: 8px 25px;
+    font-size: 14px;
+  }
+}

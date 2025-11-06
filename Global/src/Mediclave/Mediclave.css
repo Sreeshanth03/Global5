@@ -1,0 +1,168 @@
+.med-section-container {
+  text-align: center;
+  background-color: #d8f4f4;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- Title & Subtitle --- */
+.med-section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.med-section-subtitle {
+  max-width: 850px;
+  margin: 0 auto 40px;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* --- Grid Layout (4 per row) --- */
+.med-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1500px;
+  margin: 0 auto 50px;
+}
+
+/* --- Card Design --- */
+.med-card {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 20px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #000;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.med-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 167, 167, 0.25);
+  border: 1px solid #009b9b;
+}
+
+.med-icon {
+  font-size: 2rem;
+  color: #009b9b;
+}
+
+.med-title {
+  margin: 0;
+  flex: 1;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* --- Buttons Section --- */
+.med-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* ✅ Read More Button */
+.med-read-btn {
+  background-color: #009b9b !important;
+  border: 2px solid #009b9b !important;
+  border-radius: 50px !important;
+  padding: 12px 35px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 155, 155, 0.2);
+}
+
+.med-read-btn:hover {
+  background-color: #007f7f !important;
+  transform: scale(1.05);
+}
+
+/* ✅ Submit Abstract Button */
+.med-abstract-btn {
+  background-color: #000 !important;
+  border: 2px solid #000 !important;
+  border-radius: 50px !important;
+  padding: 12px 35px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.med-abstract-btn:hover {
+  background-color: #222 !important;
+  transform: scale(1.05);
+}
+
+/* --- Responsive Design --- */
+
+/* Tablets (2 per row) */
+@media (max-width: 1024px) {
+  .med-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .med-card {
+    font-size: 0.9rem;
+    padding: 16px 14px;
+  }
+}
+
+/* Mobiles (1 per row) */
+@media (max-width: 768px) {
+  .med-section-container {
+    padding: 40px 15px;
+  }
+
+  .med-section-title {
+    font-size: 1.5rem;
+  }
+
+  .med-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .med-card {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .med-icon {
+    font-size: 1.7rem;
+  }
+
+  .med-title {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .med-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .med-read-btn,
+  .med-abstract-btn {
+    width: 80%;
+    padding: 10px 25px;
+  }
+}

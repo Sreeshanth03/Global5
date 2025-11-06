@@ -1,0 +1,313 @@
+/* === Main Container === */
+.mediclave-schedule-container {
+  font-family: "Poppins", sans-serif;
+  background-color: #e9f9f9;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* === Hero Section === */
+.mediclave-schedule-hero {
+  background-image: url("../../Images/venue.84fde9d2bdeaf673bf74.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.mediclave-schedule-hero h1 {
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 12px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* === Schedule Content === */
+.mediclave-schedule-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* === Header Section === */
+.mediclave-schedule-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.mediclave-schedule-header h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+/* === Days Navigation === */
+.mediclave-days-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #d8f4f4;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.mediclave-day-tab {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 15px 25px;
+  min-width: 150px;
+  border: 2px solid #00a5a5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.mediclave-day-tab:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 165, 165, 0.3);
+}
+
+.mediclave-active-day {
+  background-color: #00a5a5;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 165, 165, 0.4);
+}
+
+.mediclave-day-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.mediclave-date {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.mediclave-day-name {
+  font-size: 0.85rem;
+  color: inherit;
+}
+
+/* === Timeline Container === */
+.mediclave-timeline-container {
+  display: flex;
+  justify-content: center;
+}
+
+.mediclave-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* === Timeline Items === */
+.mediclave-timeline-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mediclave-event-separator {
+  width: 2px;
+  height: 20px;
+  background: linear-gradient(to bottom, #00a5a5, transparent);
+  margin: 5px 0;
+}
+
+/* === Event Cards === */
+.mediclave-event-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #00a5a5;
+  border-radius: 16px;
+  padding: 20px;
+  width: 85%;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.mediclave-event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 165, 165, 0.15);
+}
+
+.mediclave-event-icon-wrapper {
+  font-size: 2.5rem;
+  color: #00a5a5;
+  flex-shrink: 0;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+}
+
+.mediclave-event-content {
+  flex: 1;
+  text-align: left;
+}
+
+.mediclave-event-time-location {
+  color: #00a5a5;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.mediclave-time-icon,
+.mediclave-location-icon {
+  margin-right: 5px;
+}
+
+.mediclave-event-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.mediclave-slot-badge {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* === Responsive Design === */
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .mediclave-schedule-hero {
+    height: 220px;
+  }
+
+  .mediclave-schedule-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .mediclave-day-tab {
+    min-width: 130px;
+    padding: 12px 20px;
+  }
+
+  .mediclave-event-card {
+    width: 90%;
+  }
+
+  .mediclave-event-icon-wrapper {
+    font-size: 2.2rem;
+    width: 50px;
+    margin-right: 15px;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .mediclave-schedule-hero {
+    height: 180px;
+  }
+
+  .mediclave-schedule-hero h1 {
+    font-size: 1.4rem;
+    padding: 8px 18px;
+  }
+
+  .mediclave-schedule-content {
+    padding: 0 15px;
+  }
+
+  .mediclave-schedule-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .mediclave-days-navigation {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .mediclave-day-tab {
+    width: 80%;
+  }
+
+  .mediclave-event-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 95%;
+    padding: 15px;
+  }
+
+  .mediclave-event-icon-wrapper {
+    font-size: 2rem;
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  .mediclave-event-time-location {
+    font-size: 0.9rem;
+  }
+
+  .mediclave-event-title {
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile (≤480px) */
+@media (max-width: 480px) {
+  .mediclave-schedule-hero {
+    height: 150px;
+  }
+
+  .mediclave-schedule-hero h1 {
+    font-size: 1.2rem;
+    padding: 6px 15px;
+  }
+
+  .mediclave-schedule-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .mediclave-day-tab {
+    width: 90%;
+    padding: 10px 15px;
+  }
+
+  .mediclave-date {
+    font-size: 1.1rem;
+  }
+
+  .mediclave-event-card {
+    padding: 12px;
+  }
+
+  .mediclave-event-time-location {
+    font-size: 0.85rem;
+  }
+}

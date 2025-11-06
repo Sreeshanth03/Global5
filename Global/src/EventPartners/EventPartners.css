@@ -1,0 +1,132 @@
+.partners-container {
+  background-color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.partners-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1d4ed8;
+  margin-bottom: 50px;
+}
+
+/* 🔄 Marquee Wrapper */
+.partners-marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 🎞 Track that moves horizontally */
+.partners-track {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  animation: scroll 25s linear infinite;
+}
+
+/* 💠 Each Logo Item */
+.partner-item {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 120px;
+  border: 2px solid rgb(44, 175, 173);
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼️ Logo Styling */
+.partner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* 🎬 Marquee Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* 🌐 Responsive Design */
+
+/* ✅ Laptops (1024px and below) */
+@media (max-width: 1024px) {
+  .partner-item {
+    width: 180px;
+    height: 100px;
+  }
+
+  .partners-track {
+    gap: 30px;
+    animation: scroll 22s linear infinite;
+  }
+}
+
+/* ✅ Tablets (768px and below) */
+@media (max-width: 768px) {
+  .partner-item {
+    width: 150px;
+    height: 90px;
+  }
+
+  .partners-track {
+    gap: 25px;
+    animation: scroll 18s linear infinite;
+  }
+}
+
+/* ✅ Mobiles (480px and below) */
+@media (max-width: 480px) {
+  .partners-heading {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .partner-item {
+    width: 120px;
+    height: 70px;
+  }
+
+  .partners-track {
+    gap: 20px;
+    animation: scroll 15s linear infinite;
+  }
+}
+
+/* 🌟 Button Styling */
+button,
+.btn {
+  background-color: rgb(34, 145, 143) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 25px !important;
+  padding: 10px 30px !important;
+  font-weight: 600 !important;
+  margin-top: 40px;
+  transition: all 0.3s ease !important;
+}
+
+button:hover,
+.btn:hover {
+  background-color: rgb(24, 115, 113) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(34, 145, 143, 0.3);
+}

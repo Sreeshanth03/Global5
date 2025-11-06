@@ -1,0 +1,220 @@
+.event-sponsorship {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.event-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Images/about.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.event-title {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sponsorship-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.sponsor-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.silver-sponsor {
+  border-top: 5px solid #c0c0c0;
+}
+
+.gold-sponsor {
+  border-top: 5px solid #ffd700;
+}
+
+.elite-sponsor {
+  border-top: 5px solid #b9f2ff;
+}
+
+.exhibitor-sponsor {
+  border-top: 5px solid #90ee90;
+}
+
+.sponsor-card-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+.sponsor-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  flex-grow: 1;
+}
+
+.sponsor-benefits li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.sponsor-benefits li:last-child {
+  border-bottom: none;
+}
+
+.sponsor-benefits li em {
+  font-style: italic;
+  color: #333;
+  font-weight: bold;
+}
+
+.sponsor-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ddd, transparent);
+  margin: 20px 0;
+}
+
+.sponsor-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sponsor-button:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .event-sponsorship {
+    padding: 15px;
+  }
+  
+  .event-hero {
+    height: 250px;
+  }
+  
+  .event-title {
+    font-size: 2.5rem;
+  }
+  
+  .sponsorship-cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+  
+  .sponsor-card {
+    padding: 25px;
+  }
+  
+  .sponsor-card-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .event-sponsorship {
+    padding: 10px;
+  }
+  
+  .event-hero {
+    height: 200px;
+    margin-bottom: 30px;
+  }
+  
+  .event-title {
+    font-size: 2rem;
+  }
+  
+  .sponsorship-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  
+  .sponsor-card {
+    padding: 20px;
+  }
+  
+  .sponsor-card-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+  
+  .sponsor-benefits li {
+    padding: 6px 0;
+    font-size: 0.9rem;
+  }
+  
+  .sponsor-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .event-hero {
+    height: 150px;
+  }
+  
+  .event-title {
+    font-size: 1.5rem;
+  }
+  
+  .sponsor-card {
+    padding: 15px;
+  }
+  
+  .sponsor-card-title {
+    font-size: 1.3rem;
+  }
+  
+  .sponsor-benefits li {
+    font-size: 0.85rem;
+    padding: 5px 0;
+  }
+  
+  .sponsor-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

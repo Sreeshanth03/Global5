@@ -1,0 +1,315 @@
+/* Background Image Section */
+.background-header {
+  background-image: url('../../Images/About_page.4367b8764303a4b76871.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.background-title {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  margin: 0;
+  z-index: 2;
+}
+
+/* Main Content Styles */
+.about-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.conference-title {
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  color: rgb(34, 145, 143);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.conference-date {
+  color: rgb(34, 145, 143);
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.intro-card {
+  border: none;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-left: 5px solid rgb(34, 145, 143);
+  transition: transform 0.3s ease;
+}
+
+.intro-card:hover {
+  transform: translateY(-5px);
+}
+
+.intro-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 0;
+  color: #555;
+  text-align: justify;
+}
+
+.section {
+  margin-top: 3rem;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid rgb(34, 145, 143);
+  color: rgb(34, 145, 143);
+  font-size: 2.2rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, rgb(34, 145, 143), rgb(34, 145, 143));
+}
+
+.attendee-card {
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  height: 100%;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.attendee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.attendee-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.attendee-list li {
+  padding: 0.75rem 1rem;
+  color: #444;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.attendee-list li:last-child {
+  border-bottom: none;
+}
+
+.attendee-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: rgb(34, 145, 143);
+  font-weight: bold;
+}
+
+.highlight-card {
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border-left: 4px solid rgb(34, 145, 143);
+  background: white;
+}
+
+.highlight-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-title {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: rgb(34, 145, 143);
+  font-size: 1.2rem;
+}
+
+.highlight-desc {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.date-card {
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 2rem 1rem;
+  transition: all 0.3s ease;
+  background: rgb(34, 145, 143);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.date-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.date-card:nth-child(2) {
+  background: rgb(34, 145, 143);
+}
+
+.date-card:nth-child(3) {
+  background: rgb(34, 145, 143);
+}
+
+.date-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.date-title {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.date-divider {
+  height: 3px;
+  width: 60px;
+  margin: 0 auto 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+  position: relative;
+  z-index: 2;
+}
+
+.date-info {
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .background-header {
+    height: 40vh;
+    min-height: 300px;
+    background-attachment: scroll;
+  }
+  
+  .background-title {
+    font-size: 2.5rem;
+  }
+  
+  .conference-title {
+    font-size: 2.2rem;
+  }
+  
+  .conference-date {
+    font-size: 1.1rem;
+  }
+  
+  .intro-text {
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .background-header {
+    height: 35vh;
+    min-height: 250px;
+  }
+  
+  .background-title {
+    font-size: 2rem;
+  }
+  
+  .conference-title {
+    font-size: 1.8rem;
+  }
+  
+  .date-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .date-title {
+    font-size: 1.1rem;
+  }
+  
+  .date-info {
+    font-size: 1.1rem;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(34, 145, 143);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(28, 120, 118);
+}

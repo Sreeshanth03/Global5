@@ -1,0 +1,93 @@
+.marquee-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* ✅ Allow full-screen width */
+  margin: 0 auto;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.marquee-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 0; /* ✅ Remove gap to avoid spacing between slides */
+  transition: transform 0.3s ease-in-out; /* ⚡ Increased speed */
+  width: 100%;
+    animation: scroll 20s linear infinite;
+}
+
+
+.marquee-item {
+  flex: 0 0 100%; /* ✅ Each image takes full width */
+  height: 500px; /* ✅ Taller for full display */
+  border-radius: 0; /* ✅ Remove rounding to fit perfectly */
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0s ease, box-shadow 0.3s ease;
+  border: 1px solid rgb(44, 175, 173); /* ✅ Added border box */
+}
+
+.marquee-item img {
+  width: 100vw; /* ✅ Cover full viewport width */
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* Adjust navigation button position for full-width images */
+.marquee-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(44, 175, 173);
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.marquee-btn:first-of-type {
+  left: 25px; /* ✅ Slightly inside */
+}
+
+.marquee-btn:last-of-type {
+  right: 25px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .marquee-item {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee-item {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-item {
+    height: 220px;
+  }
+}

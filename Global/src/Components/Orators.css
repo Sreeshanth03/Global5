@@ -1,0 +1,146 @@
+/* === Overall Container === */
+.orators-section {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/* === Hero Section === */
+.orators-hero {
+  background-image: url("../../Images/orators.4a0db6c290e7dedd4a6d.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orators-hero h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+/* === Heading Section === */
+.orators-header {
+  margin: 50px 20px 40px;
+}
+
+.orators-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.orators-header p {
+  color: #555;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* === Orators Grid === */
+.orators-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.orator-card {
+  background: #fff;
+  border: 2px solid #00a5a5;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.orator-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.orator-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.orator-card h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.orator-title {
+  color: #00a5a5;
+  font-weight: 600;
+  margin: 0;
+}
+
+.orator-country {
+  color: #444;
+  font-size: 0.95rem;
+  margin-top: 3px;
+}
+
+/* === Responsive Design === */
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .orators-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 0 30px;
+  }
+
+  .orator-img {
+    height: 240px;
+  }
+
+  .orators-hero h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Phones (≤ 768px) */
+@media (max-width: 768px) {
+  .orators-hero {
+    height: 200px;
+  }
+
+  .orators-hero h2 {
+    font-size: 1.4rem;
+    padding: 8px 18px;
+  }
+
+  .orators-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .orators-header p {
+    font-size: 0.95rem;
+    margin: 0 10px;
+  }
+
+  .orators-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .orator-img {
+    height: 220px;
+  }
+}

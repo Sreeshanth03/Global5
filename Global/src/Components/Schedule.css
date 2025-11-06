@@ -1,0 +1,187 @@
+/* === Base Container === */
+.medischedule-container {
+  font-family: "Poppins", sans-serif;
+  background-color: #e9f9f9;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+/* === Hero Section === */
+.medischedule-hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.medischedule-hero h1 {
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 12px;
+  font-size: 2rem;
+}
+
+/* === Header Section === */
+.medischedule-header {
+  margin-top: 50px;
+}
+
+.medischedule-header h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+/* === Days Section === */
+.medischedule-days {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #d8f4f4;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  flex-wrap: wrap;
+}
+
+.medischedule-day {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 15px 25px;
+  min-width: 150px;
+  border: 2px solid #00a5a5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.medischedule-day.active {
+  background-color: #00a5a5;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 165, 165, 0.4);
+}
+
+.medischedule-day h4 {
+  margin: 5px 0;
+}
+
+.medischedule-day .day-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.medischedule-day .day-name {
+  font-size: 0.85rem;
+}
+
+/* === Schedule List === */
+.medischedule-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.medischedule-event {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #00a5a5;
+  border-radius: 16px;
+  padding: 20px;
+  width: 85%;
+  max-width: 900px;
+  transition: all 0.3s ease;
+}
+
+.medischedule-event:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 165, 165, 0.15);
+}
+
+.medischedule-icon {
+  font-size: 3rem;
+  color: #00a5a5;
+  flex-shrink: 0;
+}
+
+.medischedule-details {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.event-time {
+  color: #00a5a5;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.event-icon {
+  margin-right: 6px;
+}
+
+.event-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .medischedule-hero {
+    height: 220px;
+  }
+  .medischedule-hero h1 {
+    font-size: 1.8rem;
+  }
+  .medischedule-day {
+    min-width: 130px;
+    padding: 12px 20px;
+  }
+  .medischedule-event {
+    width: 90%;
+  }
+  .medischedule-icon {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .medischedule-hero {
+    height: 180px;
+  }
+  .medischedule-hero h1 {
+    font-size: 1.4rem;
+    padding: 8px 18px;
+  }
+  .medischedule-days {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+  }
+  .medischedule-day {
+    width: 80%;
+  }
+  .medischedule-event {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 95%;
+    padding: 15px;
+  }
+  .medischedule-icon {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  .medischedule-details {
+    margin-left: 0;
+  }
+}
